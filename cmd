@@ -7,6 +7,7 @@ docker logs 54240588caf9
 docker build -t hola-mundo-alpine-v2 .
 docker run -i -t <image_id> /bin/sh
 docker stop <container-id>
+docker stats
 
 [en thorn-dock] docker build -t thorn-dock .
 docker run -d -p 8080(host):8080(container) thorn-dock
