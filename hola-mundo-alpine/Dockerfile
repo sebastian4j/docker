@@ -1,5 +1,5 @@
 FROM openjdk:alpine
-COPY . /home/sebastian/docker/hola-mundo-alpine/hola
+COPY hola/ /hola
 WORKDIR hola/src/
-RUN javac javac hola/Mundo.java
-CMD ["java", "java hola/Mundo"]
+RUN javac hola/Mundo.java
+CMD ["java", "hola/Mundo"]
