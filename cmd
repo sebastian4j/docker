@@ -14,3 +14,5 @@ docker run -d -p 8080(host):8080(container) thorn-dock
 docker run -d -p 8081:8080 thorn-dock
 http://localhost:[8080|8081]/bienvenido/elias
 
+mvn clean package docker:build -DskipTests
+mvn docker:build
