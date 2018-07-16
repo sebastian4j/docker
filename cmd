@@ -9,6 +9,7 @@ docker build -t hola-mundo-alpine-v2 .
 docker run -i -t <image_id> /bin/sh
 docker stop <container-id>
 docker stats
+docker run -p 80:8080 xxxx
 
 [en thorn-dock] docker build -t thorn-dock .
 docker run -d -p 8080(host):8080(container) thorn-dock
