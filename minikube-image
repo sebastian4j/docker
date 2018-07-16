@@ -1,0 +1,1 @@
+kubectl run vertx-hello-v6 --image=sebastian/hola-vertx:hola-vertx --port=8080 --image-pull-policy=Never
