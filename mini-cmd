@@ -1,0 +1,19 @@
+kubectl run vertx-hello-v1 --image=sebastian/hola-vertx:hola-vertx --port=8080 --image-pull-policy=Never
+kubectl expose deployment vertx-hello-v1 --type=LoadBalancer
+kubectl get services
+minikube service <service> (ir al servicio en la web)
+kubectl get deployments
+kubectl get pods
+kubectl logs <pod>
+kubectl delete service hello-node
+kubectl delete deployment hello-node
+
+Optionally, force removal of the Docker images created:
+docker rmi hello-node:v1 hello-node:v2 -f
+
+minikube stop
+eval $(minikube docker-env -u)
+
+Optionally, delete the Minikube VM:
+minikube delete
+
